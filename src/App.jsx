@@ -31,9 +31,7 @@ function Header(){
                     <Link to="/contact">Contact</Link>
                 </div>
                 <div className="copyright">
-                    <a href="/YokeshTC.pdf" target="_blank" rel="noopener noreferrer">
-                        © T.C.Yokesh
-                    </a>
+                    <Link to={"/resume"}>© T.C.Yokesh</Link>
                 </div>
             </div>
         </>
