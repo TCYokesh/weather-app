@@ -243,8 +243,6 @@ hr {
     width: 22px;
   }
 
-
-  /* Search */
   .search-box {
     width: 100%;
     height: auto;
@@ -266,8 +264,6 @@ hr {
     font-size: 14px;
   }
 
-
-  /* Weather card */
   .weather-container {
     min-height: auto;
     padding: 20px 15px;
@@ -280,8 +276,6 @@ hr {
     border-radius: 25px;
   }
 
-
-  /* Top section */
   .weather-top {
     flex-direction: column;
     gap: 15px;
@@ -302,15 +296,11 @@ hr {
     font-size: 18px;
   }
 
-
-  /* Details */
   .other-details {
     padding: 10px;
     font-size: 14px;
   }
 
-
-  /* Sunrise sunset */
   .timings {
     flex-direction: column;
     gap: 10px;
@@ -319,12 +309,10 @@ hr {
     text-align: center;
   }
 
-
   .icon {
     width: 55px;
     height: 55px;
   }
-
 
   .error {
     font-size: 18px;
