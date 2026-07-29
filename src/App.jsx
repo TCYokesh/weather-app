@@ -1,5 +1,5 @@
 import './App.css'
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Clear from "./assets/Clear.png";
 import Clouds from "./assets/Clouds.png";
 import Rain from "./assets/Rain.png";
@@ -68,10 +68,7 @@ function WeatherCard({weather}){
         Thunderstorm,
         Mist
     };
-    console.log(weather.weather[0].main);
-    console.log(weather.weather[0]);
     const icons = weatherImages[weather.weather[0].main] || Clear;
-    console.log(icons);
 
     const date = new Date();
     const day = date.toLocaleDateString("english",{
@@ -82,6 +79,9 @@ function WeatherCard({weather}){
         hour: "2-digit",
         minute: "2-digit",
     });
+
+    const wind = weather.wind.speed;
+    const windInKm = wind*3.6
 
     return(
         <div className='weather-container'>
@@ -104,15 +104,15 @@ function WeatherCard({weather}){
                 </div>
                 <hr />
                 <div className='other-details'>
-                    <h4>🌬 Wind: {weather.wind.speed}</h4>
+                    <h4>🌬 Wind: {windInKm.toFixed(2)} km/h</h4>
                 </div>
                 <hr />
                 <div className='other-details'>
-                    <h4>🌡 Pressure: {weather.main.pressure}pa</h4>
+                    <h4>🌡 Pressure: {weather.main.pressure} hPa</h4>
                 </div>
                 <hr />
                 <div className='other-details'>
-                    <h4>👁 Visibility: {weather.visibility/1000}km</h4>
+                    <h4>👁 Visibility: {weather.visibility/1000} km</h4>
                 </div>
                 <hr />
 

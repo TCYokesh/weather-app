@@ -38,9 +38,9 @@ function AboutMe() {
       <h2 style={styles.heading}>About Me</h2>
 
       <p style={styles.paragraph}>
-        Hi! I'm Yokesh, a full-stack web developer based in Walajapet. I
+        Hi! I'm Yokesh, a Frontend developer based in Walajapet. I
         specialize in building responsive and interactive web apps using HTML,
-        CSS, Bootstrap, JavaScript, and Java.
+        CSS, Bootstrap, JavaScript, and React.
       </p>
 
       <p style={styles.paragraph}>
