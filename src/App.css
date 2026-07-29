@@ -44,7 +44,7 @@ body{
     top: 0;
     left: -280px;
     width: 280px;
-    height: 100vh;
+    height: 100dvh;
     background-color: #0f172a;
     display: flex;
     flex-direction: column;
